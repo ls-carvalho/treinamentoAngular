@@ -1,0 +1,19 @@
+.container-conteudo {
+    padding: 2em 00;
+    width: 70%;
+}
+.container-conteudo > header > h1 {
+    font-weight: 600;
+    font-size: 2em;
+}
+.container-conteudo > header > p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1em;
+    color: #999999;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}

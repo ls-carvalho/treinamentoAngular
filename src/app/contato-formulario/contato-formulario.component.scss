@@ -1,0 +1,49 @@
+.form {
+    background-color: #F9F9F9;
+    border-radius: 4px 16px;
+    margin-bottom: 5em;
+}
+.form label {
+    color: #000000;
+    font-weight: 600;
+}
+.form input{
+    color: rgba(51, 51, 51, 0.57);
+    border-style: none;
+    border-bottom-style: solid;
+    background-color: #F9F9F9;;
+}
+.form input:focus{
+    outline: 0;
+}
+.form > fieldset {
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+    padding: 1.5em;
+}
+.form fieldset :first-child {
+    display: flex;
+    column-gap: 1em;
+}
+.control-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.control-group > div{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+}
+.form > fieldset > div:nth-child(2) {
+    margin-top: 2em;
+}
+.form > fieldset > div:last-child {
+    align-self: flex-end;
+}
+.form > fieldset > div > .btn-card {
+    margin-top: 2em;
+    color: #FFFFFF;
+    background-color: #2850D1;
+}

@@ -1,1 +1,105 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    width: calc(100vw - 1em);
+    height: 100vh;
+    background-color: #F1F1F1;
+    margin: 0;
+    padding: 0;
+}
+.header-container{
+    background: linear-gradient(90deg, #2850D1 0%, #2E59E2 100%);
+    width: 100%;
+}
+.header-container > nav {
+    display: flex;
+    align-items: center;
+    padding: 0.8em 1em;
+    flex-shrink: 0;
+}
+.header-container > nav > img {
+    height: 30px;
+}
+.header-container > nav > ul {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0;
+    margin-left: -55px;
+    column-gap: 0.5em;
+}
+.header-container > nav > ul > li {
+    list-style: none;
+}
+.btn {
+    background-color: inherit;
+    border-radius: 4px 12px;
+    color: #F1F1F1;
+    width: 166px;
+    height: 35px;
+    border: none;
+}
+.btn-menu {
+    width: 70px;
+    height: 30px;
+    padding: 0.2em 0.6em;
+    text-decoration: none;
+}
+.btn-menu:hover {
+    background-color: #F1F1F1;
+    color: #2850D1;
+}
+.active {
+    background-color: #F1F1F1;
+    color: #2850D1;
+    font-weight: bold;
+}
+.footer-container {
+    width: 100%;
+    background: #102156;
+    color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.footer-container > img {
+    margin: auto;
+    margin-top: 1em;
+    height: 30px;
+}
+.footer-container > div > .informacoes {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 3em;
+    margin: 0;
+    align-items: center;
+}
+.footer-container > div > .informacoes > li > p {
+    line-height: 0.5em;
+}
+.footer-container > div > .informacoes > li:not(:first-child) {
+    text-decoration: underline;
+}
+main {
+    min-height: calc(100vh - 56px - 166px);
+    display: flex;
+    flex-direction: column;
+}
+main > :nth-child(2n) {
+    background-color: #2850D1;
+    color: #F1F1F1;
+}
+h1 {
+    margin: 0;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

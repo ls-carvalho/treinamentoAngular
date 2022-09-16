@@ -1,0 +1,64 @@
+.card {
+    width: 100%;
+    height: 180px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 8px 36px;
+    display: flex;
+    margin: 1em 0;
+    column-gap: 1em;
+}
+.card > img {
+    min-width: 270px;
+    border-radius: 8px 0px 0px 36px;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5em 0.5em 0.5em 0;
+}
+.conteudo img {
+    height: 0.5em;
+}
+.conteudo > h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.conteudo > p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: #737373;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.conteudo > footer {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 1em;
+}
+.conteudo > footer p {
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+.conteudo > footer > p > a {
+    text-decoration: none;
+    font-size: inherit;
+}
+.conteudo > footer > p > a > i {
+    font-size: 0.7em;
+}
+.conteudo > footer > p:first-child{
+    color: #999999;
+}
+.conteudo > footer > p:last-child{
+    color: #2D57DF;
+}

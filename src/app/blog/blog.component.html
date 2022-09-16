@@ -1,0 +1,16 @@
+<main>
+  <section>
+    <div class="container-conteudo">
+      <header>
+        <h1>Blog da Comunidade</h1>
+        <p>
+          Encontre aqui conteúdos diversos sobre programação que nossos insiders
+          prepararam para você ;D
+        </p>
+      </header>
+      <div class="cards">
+        <app-blog-card *ngFor="let card of cards" [card]="card"></app-blog-card>
+      </div>
+    </div>
+  </section>
+</main>
