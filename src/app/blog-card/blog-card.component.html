@@ -1,5 +1,5 @@
 <div class="card">
-  <img src="{{ card.imagem }}" alt="{{ card.alt }}" />
+  <img [src]="card.imagem" [alt]="card.alt" />
   <div class="conteudo">
     <h2>{{ card.titulo }}</h2>
     <p>
@@ -8,7 +8,7 @@
     <footer>
       <p>{{ card.data }}</p>
       <p>
-        <a href="{{ card.link }}"
+        <a [href]="card.link"
           >Leia mais <img src="../../assets/images/Vector.svg" alt="Chevron"
         /></a>
       </p>
