@@ -11,6 +11,8 @@ import { OportunidadesComponent } from './oportunidades/oportunidades.component'
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { OportunidadesCardComponent } from './oportunidades-card/oportunidades-card.component';
 import { ContatoFormularioComponent } from './contato-formulario/contato-formulario.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,10 @@ import { ContatoFormularioComponent } from './contato-formulario/contato-formula
     OportunidadesComponent,
     BlogCardComponent,
     OportunidadesCardComponent,
-    ContatoFormularioComponent
+    ContatoFormularioComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

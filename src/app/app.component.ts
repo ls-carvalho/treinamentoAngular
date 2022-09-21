@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'treinamento-angular';
-  pagina: number = 0;
-
-  mudarPagina(novaPagina: number) {
-    this.pagina = novaPagina;
-  }
 }
